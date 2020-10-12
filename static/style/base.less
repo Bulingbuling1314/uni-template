@@ -1,0 +1,67 @@
+.ios_scorll{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+html, body, page {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+// #ifdef MP-WEIXIN
+page {
+  padding-top: 20px;
+}
+// #endif
+// #ifdef H5
+// #endif
+#app {
+  font-family: 微软雅黑;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background-color: #f7f8fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+button {
+  outline: none;
+  border: 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_s {
+  display: flex;
+  align-items: center;
+}
+
+// 超出一行显示省略号
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+// 超出两行显示省略号
+.ellipsis-line-two {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
